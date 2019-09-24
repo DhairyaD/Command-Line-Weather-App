@@ -5,7 +5,6 @@ const geocode = (location, callback) => {
 
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(location) + '.json?access_token=pk.eyJ1IjoiZGhhaXJ5YWRhdmUyMSIsImEiOiJjazBuOWg4MW4wdnU5M2ZybXZndWw2c3FuIn0.C8aqhs1hw0uoGQeuvDIa4g&limit=1';
     
-    // destructure response object to get body from the response object
     request({url: url, json: true}, (error, { body }) => {
 
         if (error) {

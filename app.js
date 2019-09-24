@@ -5,7 +5,6 @@ const forecast = require('./forecast.js');
 const location = process.argv[2]; 
 
 // geocode(location, callback)
-// destructing data object to get latitude, longtiude and location properties from it
 geocode(location, (error, { latitude, longitude, location } ) => {
 
     // not enough args 
